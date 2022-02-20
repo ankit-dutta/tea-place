@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Domine:wght@600&family=Inter&family=Passion+One&family=Permanent+Marker&display=swap');
+
+#main-container{
+        height: 100%;
+    width:98%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:22px;
+    margin-left: 22px;
+}
+.card-container{
+border-radius: 10px;
+padding:20px;
+width:18vw;
+-webkit-box-shadow: 0 0 10px rgb(117, 103, 103);
+        box-shadow: 0 0 10px rgb(88, 73, 73);
+}
+
+
+img{
+    padding: 5px;
+    height:27vh;
+    width: 18vw;
+
+}
+.hoverbox{
+    position: relative;
+    padding: 0;
+    width: 18vw;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+.hoverlayer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    opacity: 0;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ebf7ff;
+    background-color: rgba(51, 46, 46, 0.5);
+    width: 18vw;
+    height: 230px;
+    -webkit-transition: all 400ms ease-out;
+    -moz-transition: all 400ms ease-out;
+    -o-transition: all 400ms ease-out;
+    -ms-transition: all 400ms ease-out;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+
+
+.hoverbox .hoverlayer:hover{
+    opacity: 1;
+}
+.hoverbox .hoverlayer .hovertext{
+    height: 0;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+}
+
+.hover .hoverlayer:hover .hovertext{
+    opacity: 1;
+    transform: translateY(250px);
+    -webkit-transform: translateY(250px);
+}
+
+h4{
+    font-family: 'Bangers', cursive;
+font-family: 'Domine', serif;
+font-size: 25px;
+color: rgb(72, 143, 72);
+
+}
+
+h6{
+    
+    font-family: 'Oswald', sans-serif;
+     font-size: 15px;
+
+}
+
+button{
+    background-color: rgb(247, 195, 23);
+    font-weight: 600px;
+
+
+    box-shadow: 2px 5px 5px rgb(113, 139, 113);
+    width:15vw;
+    height:5vh;
+    border-radius: 20px;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
